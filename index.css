@@ -727,33 +727,142 @@ a.footer-info-item:hover .footer-text span {
 }
 
 
-@media (max-width: 1024px) {
-    .experience-grid {
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20px;
-    }
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    padding: 20px 5%;
+  }
+
+  .hero-left {
+    max-width: 55%;
+  }
+
+  .hero-image {
+    width: 40%;
+    right: 5%;
+  }
+
+  .about-container {
+    gap: 30px;
+    padding: 0 2%;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
 }
 
-@media (max-width: 768px) {
-    .experience-section { padding: 60px 6% 80px 6%; }
-    
-    .experience-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 15px;
-    }
-    
-    .footer-main-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 35px;
-    }
-    
-    .footer-info-links {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .leaf-decoration {
-        width: 100px;
-    }
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; 
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 120px 5% 50px 5%;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .hero-image {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .script-name {
+    font-size: 4rem;
+  }
+
+  .about-container {
+    flex-direction: column; 
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-column {
+    width: 100%;
+  }
+
+  .polaroid-frame {
+    transform: none; 
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+
+  .footer-main-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-info-links {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .script-name {
+    font-size: 3.2rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr; /* Điện thoại nhỏ thì thông tin cá nhân xếp thành 1 hàng dọc hẳn */
+    gap: 15px;
+  }
+
+  .my-values-card {
+    padding: 20px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr; /* 4 ô kinh nghiệm xếp dọc hoàn toàn để xem ảnh cho to rõ */
+  }
+
+  .footer-title-block h2 {
+    font-size: 2.2rem;
+  }
+
+  .script-footer {
+    font-size: 1.5rem;
+  }
 }
